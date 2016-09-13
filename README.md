@@ -1,6 +1,6 @@
-# **Nodejs-Mongodb-Heroku getting started app**
----
-#### Build a barebones Node.js app using [Express 4](http://expressjs.com/) and [MongoDB](https://www.mongodb.com/).
+# **Nodejs + MongoDB => Heroku getting started!**
+
+### Build a barebones Node.js app using [Express 4](http://expressjs.com/) and [MongoDB](https://www.mongodb.com/).
 &nbsp;  
 This application is the merging of the following two articles: the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article and [Building a Simple CRUD Application with Express and MongoDB](https://zellwk.com/blog/crud-express-mongodb/) article - check them out.
 

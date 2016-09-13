@@ -55,17 +55,16 @@ app.post('/quotes', (req, res) => {
 });
 
 app.put('/quotes', (req, res) => {
-
   db.collection('quotes').findOneAndUpdate(
     {
       name: 'Yoda'
-    }, 
+    },
     {
       $set: {
         name: req.body.name,
         quote: req.body.quote
       }
-    }, 
+    },
     {
       sort: {_id:-1},
       upsert: true
@@ -80,7 +79,7 @@ app.put('/quotes', (req, res) => {
 
 app.delete('/quotes', (req, res) => {
   db.collection('quotes').findOneAndDelete(
-    { name: req.body.name }, 
+    { name: req.body.name },
     null,
     (err, result) => {
       if (err) return res.send(500, err);
@@ -89,8 +88,9 @@ app.delete('/quotes', (req, res) => {
   );
 });
 
-//app.listen(app.get('port'), function() {
-//  console.log('Node app is running on port', app.get('port'));
-//});
-
-
+app.delete('/allquotes', (req, res) => {
+  db.collection('quotes').remove( (err, result) => {
+      if (err) return res.send(500, err);
+      res.send('quotes DB was wiped out!');
+  });
+});

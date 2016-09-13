@@ -8,40 +8,65 @@
 
 <% include ../partials/nav.ejs %>
 
-<h1>May Node and Express be with you.</h1>
+<div class="jumbotron">
 
+  <img class='lang-logo' src="/lang-logo.png">
+  <h1 class='text-center'>May Node, Express and Mongo be with you!</h1>
+
+</div>
 <div class="container">
-  <h2>StarWars Quote Database:</h2>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+  		<h3>StarWars Quotes Database:</h3>
+		</div>
+		<div class="panel-body">
+			<ul class="quotes list-group">
+		    <% for(var i=0; i<quotes.length; i++) {%>
+		      <li class="quote list-group-item">
+		        <span><%= i + '- ' + quotes[i].name %>: </span>
+		        <span><%= quotes[i].quote %></span>
+		      </li>
+		    <% } %>
+		  </ul>
+	  </div>
+	</div>
 
-  <ul class="quotes">
-    <% for(var i=0; i<quotes.length; i++) {%>
-      <li class="quote">
-        <span><%= quotes[i].name %>: </span>
-        <span><%= quotes[i].quote %></span>
-      </li>
-    <% } %>
-  </ul>
+
   <div>
-    <h3>Replace last quote written by Master Yoda with a quote written by Darth Vader.</h3>
-    <button id="update"> Darth Vader invades! </button>
-  </div>
-  <div>
-    <h3>Delete Darth Vader's first quote</h3>
-    <button id="delete"> Delete first Darth Vader quote </button>
+    <h4>Replace last quote written by Master Yoda with a quote written by Darth Vader.</h4>
+    <button id="update" class="btn btn-default btn-warning"> Darth Vader invades! </button>
+    <h4>Delete Darth Vader's first quote</h4>
+    <button id="delete" class="btn btn-default btn-success"> Delete first Darth Vader quote </button>
+		<h4>Delete All</h4>
+    <button id="delete-all" class="btn btn-default btn-danger"> Delete all quotes </button>
   </div>
 </div>
 
 <div class="container">
-  <h2>Database Submission Form</h2>
+  <h2 class='text-center'>Database Submission Form</h2>
 
-  <form action="/quotes" method="POST">
-    <input type="text" placeholder="name" name="name">
-    <input type="text" placeholder="quote" name="quote">
-    <button type="submit">Submit</button>
+	<form action="/quotes" method="POST">
+		<div class="form-group form-group-lg">
+			<label class="control-label dblabel" for="author">Author</label>
+			<div class="">
+    		<input  class="form-control" type="text" placeholder="Yoda maybe?" name="name" id="author" required>
+			</div>
+		</div>
+		<div class="form-group form-group-lg">
+			<label class="control-label dblabel" for="quote">Quote</label>
+			<div class="">
+    		<input  class="form-control" type="text" placeholder="May the force..." name="quote" id="quote" required>
+			</div>
+		</div>
+		<div class="form-group">
+    	<div class="">
+    		<button class="btn btn-default btn-lg" type="submit">Submit to DB</button>
+			</div>
+  	</div>
   </form>
 
 </div>
-
+<br>
 <script src="main.js"></script>
 </body>
 </html>
