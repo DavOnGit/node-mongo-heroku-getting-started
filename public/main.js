@@ -39,7 +39,7 @@ del.addEventListener('click', function () {
 
 
 var wipe = document.getElementById('delete-all');
-var dbList = document.getElementsByClassName('quote').length;console.log(dbList);
+var dbList = document.getElementsByClassName('quote').length;
 
 if(dbList > 0) { console.log(dbList);
 	wipe.disabled = false;

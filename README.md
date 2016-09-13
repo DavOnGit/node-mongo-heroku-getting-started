@@ -13,7 +13,7 @@ If you are following these articles as a tutorial then read this:
 - Note in the first tutorial that the `/views` folder contain the `/pages` folder and the `/partials` folder, they both are used by [EJS](http://www.embeddedjs.com/) to compose pages that share same header, navbar, footers and so on...
 - When you start the second tutorial remember to keep the same file structure inherited from the first one. This means that instead of create an `index.html` (that we already have but it is called `index.ejs` and is located in `/views/pages/index.ejs`) you have to create a second page called `/db` in `/views/pages/db.ejs` folder.
 
-This app is live here: [![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Run my app on heroku")](https://hero-tut.herokuapp.com/)
+This app is live here: [![logo](/public/icon48.png "Run the demo app on heroku")](https://hero-tut.herokuapp.com/)
 
 For more information about using Node.js on Heroku or MongoDB or Express or EJS, see these articles and websites:
 
