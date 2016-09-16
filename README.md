@@ -31,8 +31,8 @@ For more information about using Node.js on Heroku or MongoDB or Express or EJS,
 Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
 
 ```sh
-$ git clone git@github.com:DavOnGit/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
+$ git clone https://github.com/DavOnGit/node-mongo-heroku-getting-started.git # or clone your own fork
+$ cd node-mongo-heroku-getting-started
 $ npm install
 $ npm start
 ```
@@ -41,11 +41,14 @@ Your app should now be running on [localhost:5000](http://localhost:5000/).
 
 ## Deploying to Heroku
 
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+or
+
+Make sure you have the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
+
 ```
 $ heroku create
 $ git push heroku master
 $ heroku open
 ```
-or
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
