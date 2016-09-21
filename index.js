@@ -1,6 +1,6 @@
+//var conf = require('./config'); // Needed if run locally
 const cool = require('cool-ascii-faces');
 const bodyParser= require('body-parser');
-var conf = require('./config');
 const express = require('express');
 const app = express();
 const MongoClient = require('mongodb').MongoClient;
