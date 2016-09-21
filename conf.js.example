@@ -1,0 +1,3 @@
+module.exports = {
+	MONGODB_URI: 'mongodb://<DBUSER>:<PASSWORD>@ds029436.mlab.com:29436/heroku_r1hdctpj'
+}
