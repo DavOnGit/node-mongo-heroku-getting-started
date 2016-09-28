@@ -1,4 +1,3 @@
-//var conf = require('./config'); // Needed if run locally
 const cool = require('cool-ascii-faces');
 const bodyParser= require('body-parser');
 const express = require('express');
@@ -6,7 +5,7 @@ const app = express();
 const MongoClient = require('mongodb').MongoClient;
 
 var db;
-var urlDB = (process.env.MONGODB_URI || conf.MONGODB_URI);	// This is for Heroku
+var urlDB = (process.env.MONGODB_URI);
 
 app.set('port', (process.env.PORT || 5000));
 
@@ -51,7 +50,6 @@ app.get('/db', function(request, response) {
 app.post('/quotes', (req, res) => {
   db.collection('quotes').save(req.body, (err, result) => {
     if (err) return console.log(err);
-    console.log('saved to database');
     res.redirect('/db');
   });
 });
