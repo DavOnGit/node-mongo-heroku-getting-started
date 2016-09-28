@@ -5,7 +5,7 @@ const app = express();
 const MongoClient = require('mongodb').MongoClient;
 
 var db;
-var urlDB = (process.env.MONGODB_URI);
+var urlDB = process.env.MONGODB_URI;
 
 app.set('port', (process.env.PORT || 5000));
 
