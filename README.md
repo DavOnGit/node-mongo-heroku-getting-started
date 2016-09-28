@@ -1,3 +1,5 @@
+[![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/DavOnGit/myown)
+
 # **Nodejs + MongoDB => Heroku getting started!**
 
 ### Build a barebones Node.js app using [Express 4](http://expressjs.com/) and [MongoDB](https://www.mongodb.com/).
