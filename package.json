@@ -3,7 +3,7 @@
   "version": "0.2.5",
   "description": "A sample Node.js app using Express 4 and MongoDB",
   "engines": {
-    "node": "5.9.1"
+    "node": "4.3.1"
   },
   "main": "index.js",
   "scripts": {
