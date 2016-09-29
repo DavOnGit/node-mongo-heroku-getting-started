@@ -7,15 +7,14 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "nf run nodemon index.js",
-    "dev": "nodemon index.js"
+    "start": "node index.js",
+    "dev": "nf run nodemon index.js"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
     "cool-ascii-faces": "1.3.4",
     "ejs": "2.4.1",
     "express": "4.13.3",
-    "foreman": "2.0.0",
     "mongodb": "^2.2.9",
     "whatwg-fetch": "^1.0.0"
   },
@@ -30,6 +29,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
+		"foreman": "2.0.0",
     "nodemon": "^1.10.2"
   }
 }
