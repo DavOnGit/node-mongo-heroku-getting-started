@@ -1,8 +1,8 @@
-[![Website](https://img.shields.io/website-up-down-green-red/https/hero-tut.herokuapp.com%2F.svg?maxAge=2592000)](https://hero-tut.herokuapp.com/)
-[![Gitter](https://img.shields.io/badge/chat-on%20gitter-4EB898.svg?style=flat)](https://gitter.im/node-mongo-heroku-getting-started/Lobby)
-[![GitHub issues](https://img.shields.io/github/issues/DavOnGit/node-mongo-heroku-getting-started.svg?maxAge=2592000)](https://github.com/DavOnGit/node-mongo-heroku-getting-started/issues)
+[![Website](https://img.shields.io/website-up-down-green-red/https/hero-tut.herokuapp.com%2F.svg?maxAge=2592000&style=flat)](https://hero-tut.herokuapp.com/)
+[![GitHub issues](https://img.shields.io/github/issues/DavOnGit/node-mongo-heroku-getting-started.svg?maxAge=2592000&style=flat)](https://github.com/DavOnGit/node-mongo-heroku-getting-started/issues)
+[![Gitter](https://badges.gitter.im/Join Chat.svg?style=flat-square)](https://gitter.im/node-mongo-heroku-getting-started/Lobby)
 [![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/DavOnGit/myown)
-[![License](https://img.shields.io/cocoapods/l/AFNetworking.svg)](http://doge.mit-license.org)
+[![License](https://img.shields.io/cocoapods/l/AFNetworking.svg?style=flat)](http://doge.mit-license.org)
 
 # **Express + MongoDB => Heroku getting started!**
 
@@ -16,7 +16,7 @@ You can follow these articles as a step by step tutorial on the same app (if so 
 
 If you are following these articles as a tutorial then read this:
 - Follow the 'Getting started...' tutorial entirely but skip the last step ('Provision a database') because we will provide a MongoDB database via mLab.
-- Note in the first tutorial that the `/views` folder contain the `/pages` folder and the `/partials` folder, they both are used by [EJS](http://www.embeddedjs.com/) to compose pages that share same header, navbar, footers and so on...
+- Note in the first tutorial that the `/views` folder contain the `/pages` folder and the `/partials` folder, they both are used by [EJS](http://www.embeddedjs.com/) as templates to compose pages that share same header, navbar, footers and render server side content.
 - When you start the second tutorial remember to keep the same file structure inherited from the first one. This means that instead of create an `index.html` (that we already have but it is called `index.ejs` and is located in `/views/pages/index.ejs`) you have to create a second page called `/db` in `/views/pages/db.ejs` folder.
 
 This app is live here: [![Website](https://img.shields.io/website-up-down-green-red/https/hero-tut.herokuapp.com%2F.svg?maxAge=2592000)](https://hero-tut.herokuapp.com/)
